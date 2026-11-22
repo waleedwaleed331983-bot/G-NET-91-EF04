@@ -1,8 +1,9 @@
-﻿using System;
+﻿using Assignment_EF_Core_04.Enums;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
-using Assignment_EF_Core_04.Enums;
 
 namespace Assignment_EF_Core_04.Models
 {
@@ -19,5 +20,10 @@ namespace Assignment_EF_Core_04.Models
         [Required]
         [MaxLength(25)]
         public string Note { get; set; } = null!;
+        [Required]
+        public int AccountNumber { get; set; }
+        [ForeignKey(nameof(AccountNumber))]
+        [Required]
+        public Account Account { get; set; } = null!;
     }
 }

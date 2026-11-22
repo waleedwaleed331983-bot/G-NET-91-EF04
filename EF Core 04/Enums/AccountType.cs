@@ -7,9 +7,7 @@ namespace Assignment_EF_Core_04.Enums
     public enum AccountType
     {
         Savings,
-        Credit,
+        Current,    
         Buisness,
-        Checking,
-        Personal,
     }
 }

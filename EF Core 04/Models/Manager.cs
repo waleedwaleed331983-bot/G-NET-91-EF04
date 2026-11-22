@@ -17,8 +17,10 @@ namespace Assignment_EF_Core_04.Models
         public string Email { get; set; } = null!;
         [Required]
         [Phone]
-        public int PhoneNumber { get; set; }
+        public string PhoneNumber { get; set; }
         [Required]
-        public DateTime HireDate { get; set; }
+        public DateOnly HireDate { get; set; }
+        [Required]
+        public Branch Branch { get; set; } = null!;
     }
 }
