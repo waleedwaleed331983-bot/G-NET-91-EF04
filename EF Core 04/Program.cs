@@ -271,7 +271,11 @@ namespace Assignment_EF_Core_04
                         }
                     }
                     ;
-
+                    
+                    break;
+                case 0:
+                    Console.WriteLine("Exiting program ...");
+                    Environment.Exit(0);
                     break;
             }
 
